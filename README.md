@@ -1,0 +1,6 @@
+- Project Name: StormCenter Dice Duel
+- Short Description: “A Flask-based dice game that brings strategy, randomness, and SVG flair into one modular experience—built in the eye of the storm.”
+- Live Demo Link: Add your Heroku URL once it’s deployed
+- Tech Stack: Flask · Python · Docker (optional) · Heroku · Git
+- Setup Instructions: Quickstart commands (clone, install, run)
+- Screenshots or GIFs: Bonus flair that shows gameplay or UI

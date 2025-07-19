@@ -3,11 +3,16 @@ from flask import Flask
 from flask import Flask
 from fn_dice_roll import dice_bp
 
+
+
+
 app = Flask(__name__)
 app.register_blueprint(dice_bp)
 
 if __name__ == "__main__":
     app.run(debug=True)
+
+app = Flask(__name__)
 
 import fn_dice_roll
 dice1_roll = fn_dice_roll.roll_dice
@@ -26,7 +31,7 @@ if __name__ == "__main__":
 
 bucket = 500.00
 
-
+player_bet = input("Please enter amount to bet:")
 def play_round(bucket):
     bet = 10.00  # static for now — could later allow custom bet per round
     # Simulate dice roll (player vs computer)
