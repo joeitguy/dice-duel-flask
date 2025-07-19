@@ -1,4 +1,11 @@
 from flask import Flask
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return "Dice Duel is live!"
+
+
 
 from flask import Flask
 from fn_dice_roll import dice_bp
@@ -31,7 +38,7 @@ if __name__ == "__main__":
 
 bucket = 500.00
 
-player_bet = input("Please enter amount to bet:")
+
 def play_round(bucket):
     bet = 10.00  # static for now — could later allow custom bet per round
     # Simulate dice roll (player vs computer)
@@ -78,7 +85,9 @@ def play_round(bucket):
     
     return bucket
 
-
+player_bet_value = 0 
 while bucket > 0:
     bucket = play_round(bucket)
+    player_bet = int(input("Please enter amount to bet:"))
+    player_bet_value = player_bet
     # add option to quit early if desired 

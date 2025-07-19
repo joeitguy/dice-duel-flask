@@ -4,8 +4,6 @@ from flask import Blueprint, render_template
 dice_bp = Blueprint('dice_bp', __name__)
 
 
-
-
 def roll_dice():
     die1 = random.randint(1, 6)
     die2 = random.randint(1, 6)

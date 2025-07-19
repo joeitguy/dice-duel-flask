@@ -1,0 +1,7 @@
+<h2>You rolled: {{ die1 }} and {{ die2 }}</h2>
+<h3>Total: {{ total }}</h3>
+<img src="{{ url_for('static', filename='dice/die' ~ die1 ~ '.png') }}">
+<img src="{{ url_for('static', filename='dice/die' ~ die2 ~ '.png') }}">
+
+static/dice/die1.png
+static/dice/die2.png
