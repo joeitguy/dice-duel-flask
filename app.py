@@ -46,10 +46,10 @@ def play_round(bucket):
     winner = "player"  # stub
     
     if winner == "player":
-        bucket += bet
+        bucket += player_bet_value #bet
         print(f"You won! wallet value is now: ${bucket:.2f}")
     else:
-        bucket -= bet
+        bucket -= player_bet_value #bet
         print(f"You lost. wallet value is now: ${bucket:.2f}")
     
     return bucket
@@ -71,7 +71,7 @@ def play_round(bucket):
 
 
 def play_round(bucket):
-    bet = 10.00  # static for now — could later allow custom bet per round
+    bet = player_bet_value  # static for now — could later allow custom bet per round
     # Simulate dice roll (player vs computer)
     # winner = some_logic()
     winner = "player"  # stub
@@ -88,6 +88,7 @@ def play_round(bucket):
 player_bet_value = 0 
 while bucket > 0:
     bucket = play_round(bucket)
-    player_bet = int(input("Please enter amount to bet:"))
+    player_bet = input("Please enter amount to bet:")
     player_bet_value = player_bet
+    
     # add option to quit early if desired 
